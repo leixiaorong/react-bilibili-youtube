@@ -1,0 +1,19 @@
+.avt
+{
+    background-image: url('../../../assets/pic/tap.png');
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.label-admin
+{
+    font-size: 10px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
