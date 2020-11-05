@@ -1,11 +1,21 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = env => {
+    console.log("==============================")
+    return{
     entry: './src/main.js',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname,'dist')
+        filename: 'lxr.bundle.js',
+        path: path.resolve(__dirname,'/dist')
+    },
+    devServer: {
+        contentBase: path.join(__dirname,'dist'),
+        hot: true,
+        port: 8888,
+        inline: true,
+        open:true,
+        overlay: true,
     },
     module: {
         rules: [
@@ -48,5 +58,5 @@ module.exports = {
             template: './src/index.html'
         })
     ]
-};
-
+  }
+}
