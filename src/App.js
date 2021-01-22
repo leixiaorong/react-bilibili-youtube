@@ -2,12 +2,15 @@ import React from 'react'
 import Head from './components/Head/head'
 
 class App extends React.Component {
+
+
+componentDidMount(){
+	console.log("主页")
+}
   render() {
     return(
       <div>
-      <Head/>
-        <h1>Hello World ?</h1>
-        <button>按钮</button>
+      hhhh
       </div>
     )
   }
