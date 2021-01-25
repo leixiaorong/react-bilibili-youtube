@@ -23,5 +23,46 @@
     -webkit-transition: .2s;
     transition: .2s;
     width: 450px;
+   
 }
+}
+
+.container{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 24px 24px 36px;
+}
+
+@media (min-width:450px){
+    .container{
+        padding: 48px 40px 36px;
+        height: auto;
+        min-height: 300px;
+        overflow-y: auto;
+        transition: .2s;
+    }
+}
+
+.logo-index{
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    font-size: 15px;
+    direction: 1tr;
+    line-height: 1.42;
+}
+.login-input{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin: 20px 0px 5px;
+    justify-content: center;
+}
+.login-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
